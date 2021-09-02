@@ -1,0 +1,8 @@
+# ION LOADER
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/UIName_PetLoader_Evo1_IONLoader.UIName_PetLoader_Evo1_IONLoader,DisplayName,0,,SNIP3R
+
+# BUL LOADER
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/UIName_PetLoader_BULLoader.UIName_PetLoader_BULLoader,DisplayName,0,,SOLDI3R
+
+# WAR LOADER
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/UIName_PetLoader_Evo2_WARLoader.UIName_PetLoader_Evo2_WARLoader,DisplayName,0,,W4RF4R3
