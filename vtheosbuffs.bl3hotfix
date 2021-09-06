@@ -1,0 +1,60 @@
+
+# Brainstormer
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SG_Redistributor,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.6
+
+# Carrier
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,AR_Carrier,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,1.2,,2.0
+
+# Crossroad revert projectile to 4
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/Parts/Part_SM_HYP_Barrel_Crossroad.Part_SM_HYP_Barrel_Crossroad,InventoryAttributeEffects.InventoryAttributeEffects[2].ModifierValue.BaseValueConstant,3,,4
+
+# Skullrender moar skulls
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,AR_Soulrender,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0.125,,0.2
+
+# Ogre
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Ogre,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,2.5,,3.5
+
+# Nagata
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Nagate,Damage_12_F33DA0994756D761207677A51A156787,-1,,1.5
+
+# SuperBall
+SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Fastball,Damage_12_F33DA0994756D761207677A51A156787,0,,12.0
+
+# Lightspeed
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/GrenadeMod_Unique_BalanceTable_Takedown2.GrenadeMod_Unique_BalanceTable_Takedown2,DAF_Lightspeed,Damage_12_F33DA0994756D761207677A51A156787,0.65,,1
+
+# Operative (COLD WARRIOR) Element Chance 50%
+SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_05,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,0.5
+
+# Operative (COLD WARRIOR) Elemental Damage 50%
+SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_05,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,0.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
