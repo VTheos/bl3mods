@@ -29,6 +29,8 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Ope
 # Operative (COLD WARRIOR) Elemental Damage 50%
 SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_05,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,0.5
 
+# Masterwork critbuff
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,CritDamageScale_61_5876F7BA4086CE2615C39F84E7409B3C,0,,2.5
 
 
 
