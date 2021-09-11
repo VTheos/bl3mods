@@ -11,9 +11,15 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/Da
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Transcend_Duration,Value,0,,(BaseValueConstant=20.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 #Flak
-#Buffing Big Game to 15% Effect per point and 75% Duration Per Point
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged7,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.75
+#Buffing Big Game to 15% Effect per point and 65% Duration Per Point
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged7,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.65
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged7,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.15
+
+# Buffing Furious Attack Duration
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun1,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,6.0
+
+# Buffing Rage and Recover Duration
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun3,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,6.0
 
 #Zane
 #Buffing Death Follows Close Extra Duration to 13 seconds and effect to 30%
