@@ -515,7 +515,7 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operativ
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/DamageSources/DamageSource_BeastmasterPet_Melee.DamageSource_BeastmasterPet_Melee,bCanCauseCriticals,0,,true
 
 # Buffing global pet melee damage (Credit to Grimm)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,75.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,25.0
 
 # Nerf global pet ranged damage (Credit to Grimm)
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,-0.5
