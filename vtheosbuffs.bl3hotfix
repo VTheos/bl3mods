@@ -419,6 +419,8 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 # Buffing Purples
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,VeryRare,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.45
 
+# Buffing Blues
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Rare,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.25
 
 
 
