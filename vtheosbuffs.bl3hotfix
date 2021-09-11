@@ -416,7 +416,8 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/Barrel/DataTable_Weapon_SR_Barrel_Init.DataTable_Weapon_SR_Barrel_Init,VLA_Barrel_ETech,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,0.85
 
-
+# Buffing Purples
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,VeryRare,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.45
 
 
 
@@ -521,7 +522,11 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmas
 # Nerf global pet ranged damage (Credit to Grimm)
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,-0.5
 
+# Buffing Guerillas in the Mist damage (Credit to Grimm)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant_Mod3,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.5
 
+# Buffing Guerillas in the Mist duration (Credit to Grimm)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant_Mod3,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,8
 
 
 
