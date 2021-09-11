@@ -397,7 +397,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/Data
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,HW_Globetrotter,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.150
 
 # Pricker (Unique)
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Pricker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.215
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Pricker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.215
 
 
 ## REX TEXT
