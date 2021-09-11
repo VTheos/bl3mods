@@ -405,6 +405,37 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/UIStat_RedTe
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/UIStat_RedText_WebSlinger.UIStat_RedText_WebSlinger,Text,0,,[Flavor][cryo]If I can fool a bug... I can surely fool a man.[/cryo][/Flavor]
 
 
+# Buffing Alien SR
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/Barrel/DataTable_Weapon_SR_Barrel_Init.DataTable_Weapon_SR_Barrel_Init,DAL_Barrel_ETech,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.0
+
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/Barrel/DataTable_Weapon_SR_Barrel_Init.DataTable_Weapon_SR_Barrel_Init,HYP_Barrel_ETech,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,0.8
+
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/Barrel/DataTable_Weapon_SR_Barrel_Init.DataTable_Weapon_SR_Barrel_Init,MAL_Barrel_ETech,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.2
+
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/Barrel/DataTable_Weapon_SR_Barrel_Init.DataTable_Weapon_SR_Barrel_Init,VLA_Barrel_ETech,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,0.85
+
+
+
+
+
+
+
+## MELEE BUFFS
+
+# Making Melee Crit (10 FPSs Credit Here)
+SparkPatchEntry,(1,1,0,),/Game/GameData/DamageSources/DamageSource_Melee.Default__DamageSource_Melee_C,bCanCauseCriticals,0,,true
+
+# Giving Psycho Stabber Bullets Melee Damage Instead
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/PsychoStabber/Parts/Part_PS_COV_Barrel_PsychoStabber.Part_PS_COV_Barrel_PsychoStabber:AspectList_WeaponUseModeAspectData.WeaponUseComponent_WeaponFireProjectileComponent,DamageSource,0,,BlueprintGeneratedClass'/Game/GameData/DamageSources/DamageSource_Melee.DamageSource_Melee_C'
+
+# Increasing Base Slam Damage
+# SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerGroundSlamDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,175
+
+# Increasing Base Melee Damage
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerMeleeDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,45
+ 
+# Increasing Slide Damage
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerSlideDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,25
 
 
 
@@ -421,12 +452,79 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Uniqu
 # Lightspeed
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/GrenadeMod_Unique_BalanceTable_Takedown2.GrenadeMod_Unique_BalanceTable_Takedown2,DAF_Lightspeed,Damage_12_F33DA0994756D761207677A51A156787,0.65,,1
 
-## PLUS
+
+
+
+
+## ZANE
 
 # Operative (COLD WARRIOR) Element Chance 50%
 SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_05,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,0.5
 
 # Operative (COLD WARRIOR) Elemental Damage 50%
 SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_05,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,0.5
+
+# Give Antifreeze 75% More Damage, and 75% Damage Reduction
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/Table_CM_Raid1.Table_CM_Raid1,OperativeRaid1ClassMod,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,0.75
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/Table_CM_Raid1.Table_CM_Raid1,OperativeRaid1ClassMod,Value_C_6_3F98C9DC474EDF4757401A9211583E20,0,,0.75
+
+# Giving Nerves of Steel crit damage instead
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/StatusEffect_Operative_NervesOfSteel.StatusEffect_Operative_NervesOfSteel,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Weapons/Att_CriticalHitDamageBonus.Att_CriticalHitDamageBonus
+
+# Fixing nerves of steel negative accuracy
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/StatusEffect_Operative_NervesOfSteel.StatusEffect_Operative_NervesOfSteel,AttributeEffects.AttributeEffects[1].AttributeData,0,,
+
+# Remove Handling too
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/StatusEffect_Operative_NervesOfSteel.StatusEffect_Operative_NervesOfSteel,AttributeEffects.AttributeEffects[2].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/StatusEffect_Operative_NervesOfSteel.StatusEffect_Operative_NervesOfSteel,AttributeEffects.AttributeEffects[3].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/StatusEffect_Operative_NervesOfSteel.StatusEffect_Operative_NervesOfSteel,AttributeEffects.AttributeEffects[4].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/StatusEffect_Operative_NervesOfSteel.StatusEffect_Operative_NervesOfSteel,AttributeEffects.AttributeEffects[5].AttributeData,0,,
+
+# MAKING THE FUCKING CARD SAY THE CRIT DAMAGE BONUS PLS
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/PassiveSkill_Operative_NervesOfSteel.Default__PassiveSkill_Operative_NervesOfSteel_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Weapons/Att_CriticalHitDamageBonus.Att_CriticalHitDamageBonus
+
+# Adjusting Short Description for Nerves of Steel Crit Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/PassiveSkill_Operative_NervesOfSteel.Default__PassiveSkill_Operative_NervesOfSteel_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Critical Damage:[/skillbold] $VALUE$ per second
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/PassiveSkill_Operative_NervesOfSteel.Default__PassiveSkill_Operative_NervesOfSteel_C:UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,
+
+# Adjusting Description for Nerves of Steel Crit Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/PassiveSkill_Operative_NervesOfSteel.Default__PassiveSkill_Operative_NervesOfSteel_C,AbilityDescription,0,,Zane gains increasing [skillbold]Critical Damage[/skillbold]. The longer his shield is full, the greater the bonus.
+
+# Adjusting Values for Nerves of Steel Crit Damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,NervesOfSteal_Accuracy,Value,0,,(BaseValueConstant=0.035,BaseValueScale=1.0)
+
+# Adjusting Values for Nerves of Steel Handling
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,NervesOfSteal_Handling,Value,0,,(BaseValueConstant=0.025,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
+
+# Buffing Confident Competence Bonus Damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,ConfidentComfidence_GunDamage,Value,0,,(BaseValueConstant=1,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
+
+# Confident Competence bonus accuracy
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,ConfidentConfidence_Accuracy,Value,0,,(BaseValueConstant=0,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
+
+
+
+
+
+
+
+## FLAK
+
+# FL4K Pets Can Melee Crit
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/DamageSources/DamageSource_BeastmasterPet_Melee.DamageSource_BeastmasterPet_Melee,bCanCauseCriticals,0,,true
+
+# Buffing global pet melee damage (Credit to Grimm)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,75.0
+
+# Nerf global pet ranged damage (Credit to Grimm)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,-0.5
+
+
+
+
+
+
+
 
 
