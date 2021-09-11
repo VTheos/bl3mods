@@ -397,7 +397,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/Data
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,HW_Globetrotter,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.150
 
 # Pricker (Unique)
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_HYP_Pricker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.215
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Pricker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.215
 
 
 ## REX TEXT
@@ -453,7 +453,9 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/Gre
 # FastBall
 SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Fastball,Damage_12_F33DA0994756D761207677A51A156787,4,,6.0
 
-
+# Buffing Electric Banjo damage and proc chance
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_ElectricBanjo_BulletProcChance,Offset,0,,(BaseValueConstant=0.65))
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_ElectricBanjo_DamagePercentage,Offset,0,,(BaseValueConstant=0.85))
 
 
 
