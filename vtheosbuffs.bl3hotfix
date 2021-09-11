@@ -444,13 +444,10 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceSca
 ## GRENADES
 
 # Nagata
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Nagate,Damage_12_F33DA0994756D761207677A51A156787,-1,,1.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Nagate,Damage_12_F33DA0994756D761207677A51A156787,-1,,0.5
 
 # FastBall
 SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Fastball,Damage_12_F33DA0994756D761207677A51A156787,4,,6.0
-
-# Lightspeed
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/GrenadeMod_Unique_BalanceTable_Takedown2.GrenadeMod_Unique_BalanceTable_Takedown2,DAF_Lightspeed,Damage_12_F33DA0994756D761207677A51A156787,0.65,,1
 
 
 
@@ -515,7 +512,7 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operativ
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/DamageSources/DamageSource_BeastmasterPet_Melee.DamageSource_BeastmasterPet_Melee,bCanCauseCriticals,0,,true
 
 # Buffing global pet melee damage (Credit to Grimm)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,25.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,10.0
 
 # Nerf global pet ranged damage (Credit to Grimm)
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,-0.5
