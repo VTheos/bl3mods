@@ -15,7 +15,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,ExpGainScalar_39_2159F009466933AA733AE688E55B1B93,0,,1.5
 
 # Increasing Enemy Health in TVHM
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough2_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,2.35
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough2_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,2.0
 
 SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/Experience/Att_BaseEnemyExperience.Att_BaseEnemyExperience:ValueResolver_PlayThroughDefinedAttributeValueResolver,Value.PlaythroughTwoAndBeyond.BaseValueConstant,0,,20
 
