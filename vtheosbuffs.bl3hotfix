@@ -506,7 +506,8 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operativ
 # Confident Competence bonus accuracy
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,ConfidentConfidence_Accuracy,Value,0,,(BaseValueConstant=0,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
 
-
+#Changes Commitment to stack to 3 times, as opposed to the 2 it does post nerf.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/StatusEffect_Operative_DLCSkill_6.StatusEffect_Operative_DLCSkill_6,StackingStrategy,0,,/Game/GameData/StackingStrategy/StackingStrategy_Capped_3.StackingStrategy_Capped_3
 
 
 
@@ -528,6 +529,41 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmas
 
 # Buffing Guerillas in the Mist duration (Credit to Grimm)
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant_Mod3,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,8
+
+#Increases Tw0 Fang's chance to add a projectile to 15% per point
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged10,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.15
+
+#Increases Megavore's chance to crit to 30%
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged_Capstone,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.3
+
+
+
+
+## MOZE
+
+#Sets TCP proc chance to 10% per point. At 5 points, your explosions should always make Mr. Torgue shed a tear.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_TorgueSelfPromotion,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.1
+
+
+
+
+
+
+
+
+
+## AMARA 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
