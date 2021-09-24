@@ -78,14 +78,14 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/GameData/Loot
 ### ARMS RACE
 
 # Player takes less damage
-SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,PlayerDamageTakenScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.09
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,PlayerDamageTakenScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.03
 
 # Weaker ennemies
-SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyAccuracyScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.5
-SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.25
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyAccuracyScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.25
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.10
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthPerHumanPlayerScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.5
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScalePerDeathCircle,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.5
 
-# First murdercane 10 min
-SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[0].StableSeconds.BaseValueConstant,0,,600
+# First murdercane 15 min
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[0].StableSeconds.BaseValueConstant,0,,900
 
