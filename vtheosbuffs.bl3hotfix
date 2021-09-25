@@ -544,6 +544,36 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmas
 #Sets TCP proc chance to 10% per point. At 5 points, your explosions should always make Mr. Torgue shed a tear.
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_TorgueSelfPromotion,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.1
 
+# MINIGUN
+
+# Exploding Bullets (Augment 3)
+# Projectiles deal no self-damage 
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtInstigator,0,,0.1
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtSelf,0,,0.1
+
+# FLAMETHROWER
+
+# No Self-Damage
+# (RUNS OFF GRENADE LAUNCHER)
+
+# MISSILE LAUNCHER
+
+# All Projectiles deal no self-damage 
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/FalconStrike/DamageData/DamageData_FalconStrike.Default__DamageData_FalconStrike_C,bCanHurtInstigator,0,,0.1
+
+# GRENADE LAUNCHER
+
+# All Projectiles deal no self-damage
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/GrenadeLauncher/DamageData/DamageData_GrenadeLauncher_Normal.Default__DamageData_GrenadeLauncher_Normal_C,bCanHurtInstigator,0,,0.1
+
+
+
+
+
+
+
+
+
 
 
 
