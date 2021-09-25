@@ -555,7 +555,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData,PerGradeUpgrade,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,BaseValueScale=-0.25)
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1,PerGradeUpgrade,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None),BaseValueAttribute=None,BaseValueScale=-0.06666)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1,PerGradeUpgrade,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None),BaseValueAttribute=None,BaseValueScale=-0.03333)
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1,PerGradeUpgradeInterval,0,,1
 
