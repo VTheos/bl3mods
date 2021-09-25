@@ -544,33 +544,59 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmas
 #Sets TCP proc chance to 10% per point. At 5 points, your explosions should always make Mr. Torgue shed a tear.
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_TorgueSelfPromotion,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.1
 
-# MINIGUN
 
-# Exploding Bullets (Augment 3)
-# Projectiles deal no self-damage 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtInstigator,0,,0.1
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtSelf,0,,0.1
+### MECHANICS
 
-# FLAMETHROWER
+## Damage resistance is calculated with diminishing returns. Formula: 1-(1/(1+Value)) where Value is a decimal (Thanks CZ47)
 
-# No Self-Damage
-# (RUNS OFF GRENADE LAUNCHER)
+## Grenade Capacity Changed to Splash, Fire, & Radiation Resistance 
+# THE FOLLOWING CODE WAS CONTRIBUTED BY GRIMM
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA,AttributeEffects,0,,((AttributeData=/Game/GameData/Attributes/Damage/Att_ReceivedRadiusDamage_DamageMultiplier.Att_ReceivedRadiusDamage_DamageMultiplier,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData"'),(AttributeData=/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Fire.Att_DamageReceiverMultiplier_Fire,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1"'),(AttributeData=/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Radiation.Att_DamageReceiverMultiplier_Radiation,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1"'))
 
-# MISSILE LAUNCHER
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData,PerGradeUpgrade,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,BaseValueScale=-0.25)
 
-# All Projectiles deal no self-damage 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/FalconStrike/DamageData/DamageData_FalconStrike.Default__DamageData_FalconStrike_C,bCanHurtInstigator,0,,0.1
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1,PerGradeUpgrade,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None),BaseValueAttribute=None,BaseValueScale=-0.06666)
 
-# GRENADE LAUNCHER
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData_1,PerGradeUpgradeInterval,0,,1
 
-# All Projectiles deal no self-damage
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/GrenadeLauncher/DamageData/DamageData_GrenadeLauncher_Normal.Default__DamageData_GrenadeLauncher_Normal_C,bCanHurtInstigator,0,,0.1
+# END GRIMM'S CODE. THANKS GRIMM!
 
 
 
+### DISPLAY TEXT
+
+## Name
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C,AbilityName.string,0,,Reactive Armor
 
 
+## Description
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C,AbilityDescription.string,0,,Moze and [actionskill]Iron Bear[/actionskill] take greatly reduced [skillbold]Splash Damage[/skillbold] and slightly reduced [skillbold]Fire and Radiation Damage[/skillbold], including from their own weapons.
 
+
+## Numbers Displayed
+# Displays Fire Resist (and by extension Radiation Resist because they're increased the same, which it's supposed to) (must disable entry below)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Fire.Att_DamageReceiverMultiplier_Fire
+
+# Displays Splash Resist instead (for testing purposes) (must disable entry above)
+# SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/Damage/Att_ReceivedRadiusDamage_DamageMultiplier.Att_ReceivedRadiusDamage_DamageMultiplier
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,SignStyle,0,,EUIStatValueSignStyle::Positive
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,RoundingMode,0,,EUIStatValueRoundingMode::None
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bDisplayAsPercentage,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bDisplayPercentAsFloat,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bCalculateWithReductionMath,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bDisplayPlusSign,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Splash, Fire, & Radiation Resistance:[/skillbold] $VALUE$<br>[skillbold]Additional Splash Damage Resistance:[/skillbold] $VALUE$
+
+
+## Flavor Text
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[4].Object..Items.Items[1].Object..FlavorText,0,,[skillflavor]Ahahaha, don' 'old on ta dat end ovit![/skillflavor]
 
 
 
